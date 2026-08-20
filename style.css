@@ -130,6 +130,8 @@ body {
   border-radius: 24px;
   padding: 1.8rem;
   transition: transform 0.3s ease;
+  text-decoration: none;
+  display: block;
 }
 
 .project-card:hover,
