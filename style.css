@@ -6,6 +6,7 @@
 
 body {
   background-color: #ac7a7f;
+  font-family: Arial, sans-serif;
 }
 
 .hero {
@@ -68,25 +69,113 @@ body {
 }
 
 @keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-80px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  0% { opacity: 0; transform: translateX(-80px); }
+  100% { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(80px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  0% { opacity: 0; transform: translateX(80px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* ---------- About ---------- */
+.about {
+  padding: 6rem 8%;
+  background-color: #f3e6e7;
+}
+
+.about-content {
+  max-width: 700px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #7d1f5c;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a2e34;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Projects ---------- */
+.projects {
+  padding: 6rem 8%;
+  background-color: #ac7a7f;
+}
+
+.projects h2,
+.certifications h2,
+.activities h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.project-grid,
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card,
+.activity-card {
+  background-color: #f3e6e7;
+  border: 3px solid #a13d7c;
+  border-radius: 24px;
+  padding: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover,
+.activity-card:hover {
+  transform: translateY(-6px) rotate(-1deg);
+}
+
+.project-card h3,
+.activity-card h3 {
+  color: #a13d7c;
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+}
+
+.project-card p,
+.activity-card p {
+  color: #4a2e34;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ---------- Certifications ---------- */
+.certifications {
+  padding: 6rem 8%;
+  background-color: #f3e6e7;
+}
+
+.cert-list {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cert-list li {
+  background-color: #e8a598;
+  color: #4a2e34;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  font-size: 1rem;
+}
+
+/* ---------- Activities ---------- */
+.activities {
+  padding: 6rem 8%;
+  background-color: #ac7a7f;
 }
 
 @media (max-width: 768px) {
@@ -124,5 +213,13 @@ body {
     transform: none;
     bottom: auto;
     z-index: 3;
+  }
+
+  .about, .projects, .certifications, .activities {
+    padding: 4rem 6%;
+  }
+
+  .about h2, .projects h2, .certifications h2, .activities h2 {
+    font-size: 2rem;
   }
 }
