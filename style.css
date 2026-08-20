@@ -22,24 +22,40 @@ body {
 }
 
 .blob1 {
-  width: 55%;
-  top: -10%;
-  left: -5%;
+  width: 72.4%;
+  top: -27.8%;
+  left: -13.1%;
 }
 
 .blob2 {
-  width: 40%;
-  bottom: -15%;
-  right: 0;
+  width: 52.5%;
+  top: 40%;
+  left: 47.4%;
 }
 
 .top-text {
   position: absolute;
-  top: 7%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 75%;
+  top: 11.9%;
+  left: 9.65%;
+  width: 79.9%;
   z-index: 2;
+}
+
+.name-text {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  width: 65%;
+  z-index: 2;
+}
+
+.hero-photo {
+  position: absolute;
+  top: 23.6%;
+  left: 50.5%;
+  width: 43.5%;
+  height: 76.4%;
+  z-index: 3;
 }
 
 @media (max-width: 768px) {
@@ -58,6 +74,21 @@ body {
   .top-text {
     width: 95%;
     top: 15%;
-    transform: translateX(-50%) scaleY(1.2);
+    left: 2.5%;
+  }
+
+  .name-text {
+    width: 80%;
+    top: 75%;
+    left: 0%;
+  }
+
+  .hero-photo {
+    height: 50%;
+    right: 0;
+    left: auto;
+    top: auto;
+    bottom: 0;
+    width: auto;
   }
 }
