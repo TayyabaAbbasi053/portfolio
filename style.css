@@ -79,16 +79,19 @@ body {
 
   .name-text {
     width: 80%;
-    top: 75%;
+    top: 68%;
     left: 0%;
+    z-index: 4;
   }
 
   .hero-photo {
-    height: 50%;
+    height: 55%;
+    width: auto;
+    top: 25%;
     right: 0;
     left: auto;
-    top: auto;
-    bottom: 0;
-    width: auto;
+    transform: none;
+    bottom: auto;
+    z-index: 3;
   }
 }
