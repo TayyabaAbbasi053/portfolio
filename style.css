@@ -90,6 +90,11 @@ body {
   transform: translateY(0);
 }
 
+noscript .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ---------- About ---------- */
 .about {
   padding: 6rem 8%;
@@ -192,6 +197,47 @@ body {
   background-color: #ac7a7f;
 }
 
+/* ---------- Contact ---------- */
+.contact {
+  padding: 6rem 8%;
+  background-color: #f3e6e7;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #7d1f5c;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.contact-links a {
+  background-color: #a13d7c;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+  background-color: #7d1f5c;
+  transform: translateY(-4px);
+}
+
+.contact p {
+  color: #4a2e34;
+  font-size: 1rem;
+}
+
 @media (max-width: 768px) {
   .blob1 {
     width: 110%;
@@ -229,11 +275,11 @@ body {
     z-index: 3;
   }
 
-  .about, .projects, .certifications, .activities {
+  .about, .projects, .certifications, .activities, .contact {
     padding: 4rem 6%;
   }
 
-  .about h2, .projects h2, .certifications h2, .activities h2 {
+  .about h2, .projects h2, .certifications h2, .activities h2, .contact h2 {
     font-size: 2rem;
   }
 }
